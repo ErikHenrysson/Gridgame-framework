@@ -12,7 +12,7 @@ import framework.*;
 
 public class SokobanGame extends Gridgame{
 	
-	private boolean godMode = true;
+	private boolean godMode = false;
 	/**
 	 * Create the game and add the terminal and window observer
 	 * @param mapList LinkedList containing integer representations of the maps

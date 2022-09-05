@@ -1,5 +1,7 @@
 package classes;
 import java.io.IOException;
+import java.util.Objects;
+
 import javax.sound.sampled.*;
 
 public class AudioPlayer{
@@ -26,6 +28,8 @@ public class AudioPlayer{
 	 * plays the selected audio file once
 	 */
 	public void play() {
+		FloatControl gainControl = (FloatControl) clip.getControl(FloatControl.Type.MASTER_GAIN);        
+    gainControl.setValue(20f * (float) Math.log10(0.1));
 		clip.start();
 	}
 	
@@ -33,6 +37,9 @@ public class AudioPlayer{
 	 * loops the selected audio file until stopped.
 	 */
 	public void playLoop(){
+		FloatControl gainControl = (FloatControl) clip.getControl(FloatControl.Type.MASTER_GAIN);        
+    gainControl.setValue(20f * (float) Math.log10(0.1));  
+
 		clip.loop(Clip.LOOP_CONTINUOUSLY);
 	}
 	
