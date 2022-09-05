@@ -62,7 +62,7 @@ public class Run {
 		game.playBackGroundMusic("bgsong.wav");
 		
 		// Uncomment to see winning strategy for first and second map
-		
+		/* 
 		String[] solmap1 = {"up", "down","down","up","left","right","right"};
 		//Controller controller = new Controller(game, solmap1);
 		game.newContoller(new Controller(game, solmap1));
@@ -71,6 +71,7 @@ public class Run {
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
+		*/
 		/*
 		String[] solmap2 = {"right","up","right","right","down","left","left","left","right","right","right","down","down","down"
 				,"left","down","right","left","left","down","left","left","up","up","down","down","right","right","up","right"
